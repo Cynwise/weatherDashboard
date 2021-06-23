@@ -1,5 +1,7 @@
 # Weather Dashboard
 
+![ScreenShot](./assets/demoScreenshot.png)
+
 ## Description
 
   This website will allow the user to get current weather and a five day forcast for a chosen geolocation. 
