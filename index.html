@@ -8,14 +8,13 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="develop/style.css" />
-    <script defer src="develop/script.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
 
 </head>
 <body>
     
-    <div class = "container-fluid">
+    <div class = "container-fluid banner">
         <div class="card">
             <div class="card-body text-center logo">Weather Dashboard</div>
         </div>
@@ -27,26 +26,103 @@
             <!-- city search bar area -->
             <div id = "citySearch" class = "col-md-4">
 
+              <h2>Enter City:</h2>
               <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark " type="submit">Search</button>
+                <input class="form-control me-2" id="searchInfo" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark " id="searchBtn" type="submit">Search</button>
               </form>
-    
+              <ul class="history"></ul>
             </div>
 
             <!-- column for location and five day weather containers -->
             <div class = "col-md-8">
 
                 <!-- location weather data here -->
-                <div id = "weatherDataContainer" class = "row-md-8"> test 2</div>
+                <div id = "weatherDataContainer" class = "row-md-8">
+                  <h4 id="currentCity">City Name:</h4>
+                  <img id="weatherIcon" class="weather"src="" alt="Weather Icon">
+                  <ul id="dayForcast">
+                    <li id="currentTemperature">Temperature: <span></span></li>
+                    <li id="currentHumidity">Humidity: <span ></span></li>
+                    <li id="currentWind" >Wind Speed: <span ></span>mph</li>
+                    <li id="currentUVI">UV Index: <span id="uviNumber"></span></li>
+                  </ul>
+                </div>
 
                 <!-- location five day forecast here -->
-                <div id = "fiveDayForecast" class = "row-md-8"> test 3</div>
+                <div id = "fiveDayForecast" class = "row-md-8"> 
+                  <h2>5-Day Forecast:</h2>
+
+              <!-- Day One -->
+              <div class="row">
+                <div class="col-sm-2">
+                  <div class="card">
+                    <div class="card-body">
+                        <p class="card-text" id="day1">date</p>
+                        <img id="logo1" class="" src="" alt="Weather Icon">
+                        <p class="card-text" id="temperature1">temp</p>
+                        <p class="card-text" id="humidity1">Humidity</p>
+                    </div>
+                  </div>
+                </div>
+
+                  <!-- Day Two  -->
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <div class="card-body">
+                          <p class="card-text" id="day2">date</p>
+                          <img id="logo2" class=""src="" alt="Weather Icon">
+                          <p class="card-text" id="temperature2">temp</p>
+                          <p class="card-text" id="humidity2">Humidity</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Day Three  -->
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <div class="card-body">
+                          <p class="card-text" id="day3">date</p>
+                          <img id="logo3" class=""src="" alt="Weather Icon">
+                          <p class="card-text" id="temperature3">temp</p>
+                          <p class="card-text" id="humidity3">Humidity</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Day Four -->
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <div class="card-body">
+                          <p class="card-text" id="day4">date</p>
+                          <img id="logo4" class=""src="" alt="Weather Icon">
+                          <p class="card-text" id="temperature4">temp</p>
+                          <p class="card-text" id="humidity4">Humidity</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Day Five  -->
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <div class="card-body">
+                          <p class="card-text" id="day5">date</p>
+                          <img id="logo5" class=""src="" alt="Weather Icon">
+                          <p class="card-text" id="temperature5">temp</p>
+                          <p class="card-text" id="humidityd5">Humidity</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>    
+                </div>
 
             </div>
 
         </div>  
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="develop/script.js"></script>
 </body>
 </html>
