@@ -1,6 +1,6 @@
 # Weather Dashboard
 
-![ScreenShot](./assets/demoScreenshot.png)
+![ScreenShot](./assets/demoScreenshot1.png)
 
 ## Description
 
