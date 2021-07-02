@@ -4,7 +4,7 @@
 
 ## Description
 
-  This website will allow the user to get current weather and a five day forcast for a chosen geolocation. 
+  This website will allow the user to get current weather and a five day forecast for a chosen geo-location. Using the Openweather API. Enter your desired city into the search bar, hit search, and the page will populate with the current day forecast and 5 day forecast for the chosen city.
 
 ## Built With
 
